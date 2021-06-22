@@ -1,0 +1,40 @@
+.banner-container{
+    width: 100%;
+    padding: 1.875rem 10.3125rem;
+    .banner{
+        position: relative;
+        height: 31.5rem;
+        background: #F1DDC9;
+        display: flex;
+        align-items: center;
+        padding: 3.5rem 12.5rem 3.5rem 23.75rem ;
+        .banner-img{
+            position: absolute;
+            top:22%;
+            left: 3%;
+            img{
+                width: 97.6%;
+                height: 102.5%;
+            }
+        }
+        .banner-content{
+            .banner-title{
+                p{
+                    font-size: 2.5rem;
+                }
+            }
+            .banner-detail{
+                font-size: 0.875rem;
+                margin-bottom: 2rem;
+            }
+            .button-add{
+                button{
+                    color: white;
+                    font-size: smaller;
+                    padding: 0.5rem 2rem;
+                    background: #D84727;                   
+                }
+            }
+        }
+    }
+}
