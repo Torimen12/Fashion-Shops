@@ -1,7 +1,7 @@
 .header{
     height: 6.875rem;
     width: 100%;
-    padding: 1.875rem 10.3125rem;
+    padding: 1.875rem 5.3125rem;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -10,7 +10,7 @@
         flex:2;
     }
     .nav{
-       flex:4;
+       flex:6;
        padding: 0 3rem;
         .navigation{
             width: 100%;

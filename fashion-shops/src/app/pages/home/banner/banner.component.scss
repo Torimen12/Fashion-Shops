@@ -1,7 +1,8 @@
 .banner-container{
     width: 100%;
-    padding: 1.875rem 10.3125rem;
+    padding: 1.875rem 5.3125rem;
     .banner{
+        z-index: 2;
         position: relative;
         height: 31.5rem;
         background: #F1DDC9;
@@ -15,6 +16,30 @@
             img{
                 width: 97.6%;
                 height: 102.5%;
+            }
+        }
+        .arrow{
+            position: absolute;
+            top:94%;
+            right: 5%;
+            display: flex;
+            color: white;
+            .arrow-left{
+                width: 3.75rem;
+                height: 3.75rem;
+                margin-right: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #D84727;
+            }
+            .arrow-right{
+                width: 3.75rem;
+                height: 3.75rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #D84727;
             }
         }
         .banner-content{

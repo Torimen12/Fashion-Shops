@@ -1,0 +1,33 @@
+.feedback-container{
+    display: flex;
+    padding: 8rem 5.1325rem;
+    .feedback-img{
+        margin-right: 6.5rem;
+    }
+    .feedback-detail{
+        .feedback-title{
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 40px;
+            color: #333333;
+        }
+        .feedback-content{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+            color: #333333;
+        }
+        .feedbacker{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;    
+            color: #333333;
+        }
+        .job{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 32px;
+            color: #777777;           
+        }
+    }
+}

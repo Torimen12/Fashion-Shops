@@ -1,0 +1,45 @@
+.selections{
+    width: 100%;
+    padding: 11rem 5.3125rem 5rem 5.3125rem;
+    display: flex;
+    .selection{
+        position: relative;
+        background: white;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 10rem;
+        height: 16.875rem;
+        flex: 1;
+        .title{
+            font-size: 1.75rem;
+            color: #333;
+            line-height: 2rem;
+        }
+        .detail{
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+        .more{
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-weight: 600;
+            p{
+                margin: 0;
+            }
+            .underline{
+                width: 26%;
+                height: 1px;
+                background: #333;
+            }
+        }
+        .selection-img{
+            position: absolute;
+            right: 1%;
+            bottom: 1%;
+            img{
+                height: 100%;
+            }
+        }
+    }
+}

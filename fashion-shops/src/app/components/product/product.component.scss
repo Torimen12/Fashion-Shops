@@ -1,0 +1,120 @@
+.product-container-vertical{
+    position: relative;
+    // height: 23.75rem;
+    width: 16rem;
+    background: white;
+    color: #333;
+    padding-top: 13rem;
+    padding-left: 1.25rem;
+    // padding-bottom: 3rem;
+    .product-img{
+        position: absolute;
+        left: 7%;
+        top:-7%;
+        img{
+            width: 13.75rem;
+            height: 13.75rem;
+        }
+    }
+    .product-detail{
+        .product-name{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 0.5rem;
+        }
+        .sale{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #777777;
+            margin-bottom: 0.5rem;
+        }
+        .product-cost{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #777777;
+            text-decoration: line-through #D93F3F solid;
+            margin-bottom: 0.5rem;
+        }
+        .product-cost-r{
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 32px;
+            color: #333333;
+            margin-bottom: 0.5rem;
+        }
+        .show-cart{
+            display: flex;
+            visibility: hidden;
+            .heart-icon{
+                width: 2.5rem;
+                height: 2.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #D84727;
+                color: #D84727;
+            }
+            .btn-add{
+                outline: none;
+                border: none;
+                background: #D84727;
+                color: white;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+    }
+    &:hover{
+        cursor: pointer;
+        padding-bottom: 2rem;
+        .product-detail{
+            .show-cart{
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.product-container-horizontal{
+    display: flex;
+    .product-img{
+        width: 8.125rem;
+        height: 8.125rem;
+        margin-right: 1.5rem;
+        img{
+            height: 8.125rem;
+        }
+    }
+    .product-detail{
+        .product-name{
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 32px;
+            color: #333333;
+        }
+        .sale{
+            display: none;
+        }
+        .product-cost{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #777777;
+            text-decoration: line-through #D93F3F solid;
+        }
+        .product-cost-r{
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 32px;
+            color: #333333;
+            margin-bottom: 0.5rem;
+        }
+        .show-cart{
+            display: none;
+        }
+    }
+}

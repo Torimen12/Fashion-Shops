@@ -1,0 +1,15 @@
+.new-products-container{
+    padding: 0.75rem 5.3125rem;
+    .title{
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 40px;
+        color: #333;
+        margin-bottom: 6.75rem;
+        .line{
+            width: 10rem;
+            height: 1px;
+            background: #333;
+        }
+    }
+}
