@@ -18,8 +18,20 @@
             justify-content: space-around;
             margin: 0 !important;
             .navigation-link{
-                line-height: 100%   ;
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 34px;
+                line-height: 100%;
                 flex: 1;
+                padding: 1rem 1rem;
+                border-radius: 5px;
+                &:hover{
+                    cursor: pointer;
+                    background:#D84727;
+                    color: white;
+                }
             }
         }
     }
@@ -29,6 +41,11 @@
         justify-content: space-between;
         .icon{
             display: flex;
+            // padding: 1rem 1rem;
+            &:hover{
+                cursor: pointer;
+                color: #555;
+            }
         }
     }
 }

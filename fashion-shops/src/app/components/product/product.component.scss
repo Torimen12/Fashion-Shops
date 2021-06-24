@@ -6,7 +6,11 @@
     color: #333;
     padding-top: 13rem;
     padding-left: 1.25rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     // padding-bottom: 3rem;
+    &:hover{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 20px 20px rgba(0, 0, 0, 0.04);
+    }
     .product-img{
         position: absolute;
         left: 7%;
@@ -18,12 +22,16 @@
     }
     .product-detail{
         .product-name{
+            font-family: Taviraj;
+            font-style: normal;
             font-weight: 500;
             font-size: 24px;
             line-height: 32px;
             margin-bottom: 0.5rem;
         }
         .sale{
+            font-family: Taviraj;
+            font-style: normal;
             font-weight: normal;
             font-size: 16px;
             line-height: 24px;
@@ -31,6 +39,8 @@
             margin-bottom: 0.5rem;
         }
         .product-cost{
+            font-family: Taviraj;
+            font-style: normal;
             font-weight: normal;
             font-size: 16px;
             line-height: 24px;
@@ -39,6 +49,8 @@
             margin-bottom: 0.5rem;
         }
         .product-cost-r{
+            font-family: Taviraj;
+            font-style: normal;
             font-weight: normal;
             font-size: 24px;
             line-height: 32px;
@@ -56,20 +68,29 @@
                 justify-content: center;
                 border: 1px solid #D84727;
                 color: #D84727;
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
             }
             .btn-add{
                 outline: none;
                 border: none;
                 background: #D84727;
                 color: white;
+                font-family: Taviraj;
+                font-style: normal;
                 font-weight: normal;
                 font-size: 16px;
                 line-height: 21px;
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
             }
         }
     }
     &:hover{
-        cursor: pointer;
         padding-bottom: 2rem;
         .product-detail{
             .show-cart{
@@ -81,6 +102,10 @@
 
 .product-container-horizontal{
     display: flex;
+    &:hover{
+        cursor: pointer;
+        opacity: 0.9;
+    }
     .product-img{
         width: 8.125rem;
         height: 8.125rem;
@@ -91,7 +116,9 @@
     }
     .product-detail{
         .product-name{
-            font-weight: normal;
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: 500;
             font-size: 24px;
             line-height: 32px;
             color: #333333;

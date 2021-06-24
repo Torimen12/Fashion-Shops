@@ -1,10 +1,14 @@
 .about-container{
     padding: 10rem 5.3125rem;
     .about-title{
-        font-weight: 500;
-        font-size: 36px;
-        line-height: 40px;
         color: #333;
+        p{
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 40px;
+        }
         .line{
             width: 10rem;
             height: 1px;
@@ -16,6 +20,8 @@
         align-items: center;
         .about-text{
             .story{
+                font-family: Taviraj;
+                font-style: normal;
                 font-weight: normal;
                 font-size: 20px;
                 line-height: 40px;
@@ -23,21 +29,33 @@
                 margin-bottom: 2rem;
             }
             .decr{
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: normal;
                 font-size: 36px;
-                line-height: 40px; 
+                line-height: 40px;
                 color: #333;
                 margin-bottom: 2rem;
             }
             .btn-add{
                 padding: 1rem 1.5rem;
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: normal;
                 font-size: 16px;
                 line-height: 27px;
                 text-align: center;
+                letter-spacing: 0.02em;
                 color: #D84727;
                 outline: none;
                 border: 2px solid #D84727;
                 box-sizing: border-box;
                 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                &:hover{
+                    cursor: pointer;
+                    background: #D84727;
+                    color: white;
+                }
             }
         }
         .about-img{

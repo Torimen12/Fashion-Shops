@@ -14,9 +14,13 @@
         <div class="icon icon-search">
             <fa-icon [icon]="faSearch"></fa-icon>
         </div>
-        <div class="icon icon-user">
+        <div class="icon icon-user" (click)="openLogin()">
             <fa-icon [icon]="faUser"></fa-icon>
-            <span style="margin-left: 1rem;">Đăng nhập</span>
+            <span style="margin-left: 1rem;font-family: Taviraj;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            ">Đăng nhập</span>
         </div>
         <div class="icon icon-cart">
             <fa-icon [icon]="faCart"></fa-icon>

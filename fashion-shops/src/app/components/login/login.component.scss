@@ -1,0 +1,95 @@
+input[type=text] {
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 0.3px solid #333333;
+    width: 25rem;
+  }
+.login-container{
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .login{
+        .name{
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #333333;
+        }
+        .group{
+            p{
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 32px;
+                letter-spacing: 0.03em;                
+                color: #000000;
+                margin: 0;              
+            }
+            input{
+                outline: none;
+            }
+        }
+        .fogot{
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+            letter-spacing: 0.03em;            
+            color: #999999; 
+            margin-bottom: 1.5rem;
+        }
+        .btn-login{
+            width: 25rem;
+            height: 4.5rem;
+            outline: none;
+            border: none;
+            background: #D84727;
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.2rem;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            margin-bottom: 4rem;
+        }
+        .register{
+            text-align: center;
+            .text-small{
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1rem;
+                line-height: 24px;     
+                text-align: center;
+                letter-spacing: 0.03em;                
+                color: #999999;                
+            }
+            .text-bold{
+                outline: none;
+                border: none;
+                background: white;
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 1rem;
+                line-height: 24px;              
+                text-align: center;                
+                color: #333; 
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.9;
+                }               
+            }
+        }
+    }
+}

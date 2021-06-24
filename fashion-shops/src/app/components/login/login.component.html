@@ -1,0 +1,23 @@
+<form (submit)="submit()">
+    <div class="login-container">
+        <div class="login">
+            <p class="name">Đăng nhập</p>
+            <div class="group" style="margin-bottom:2rem">
+                <p>Tên đăng nhập</p>
+                <input type="text">
+            </div>
+            <div class="group" style="margin-bottom:0.5rem">
+                <p >Mật khẩu</p>
+                <input type="text">
+            </div>
+            <p class="fogot">Quên mật khẩu?</p>
+            <button  class="btn-login" type="submit">
+                Đăng nhập
+            </button>
+            <div class="register">
+                <span class="text-small">Bạn chưa có tài khoản?</span>
+                <button class="text-bold" type="submit" (click)="openRegister()">ĐĂNG KÝ NGAY</button>
+            </div>
+        </div>
+    </div>
+</form>

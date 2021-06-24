@@ -15,6 +15,9 @@ import { NewProductsComponent } from './pages/home/new-products/new-products.com
 import { AboutUsComponent } from './pages/home/about-us/about-us.component';
 import { ListProductsComponent } from './pages/home/list-products/list-products.component';
 import { FeedBackComponent } from './pages/home/feed-back/feed-back.component';
+import { LoginComponent } from './components/login/login.component';
+import {ModalModule} from 'ngx-bootstrap/modal';
+import { RegisterComponent } from './components/register/register.component'
 
 @NgModule({
   declarations: [
@@ -29,12 +32,15 @@ import { FeedBackComponent } from './pages/home/feed-back/feed-back.component';
     NewProductsComponent,
     AboutUsComponent,
     ListProductsComponent,
-    FeedBackComponent
+    FeedBackComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
