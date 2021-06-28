@@ -1,0 +1,67 @@
+.signup-container{
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .signup{
+        font-family: Taviraj;
+        font-style: normal;
+        .signup-text{
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #333333;            
+        }
+        .signup-form{
+            .form-group{
+                margin-bottom: 2rem;
+                label{
+                    font-weight: normal;
+                    font-size: 1rem;
+                    line-height: 2rem;               
+                    color: #000000;
+                    margin: 0;               
+                }
+                input{
+                    display: block;
+                    width: 25rem;
+                    border-radius: 0;
+                    border: 0.3px solid #333 !important;
+                    border-width: 0 0 0.3px 0 !important;
+                }
+            }
+            .form-check{
+                display: flex;
+                padding: 0;
+               input{
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: 1.5rem !important;
+               } 
+               label{
+                width: 20rem;
+                height: 2rem;
+                font-weight: normal;
+                font-size: 1rem;
+                line-height: 1rem; 
+                color: rgba(0, 0, 0, 0.5);               
+               }
+            }
+            .btn-signup{
+                width: 25rem;
+                height: 4.5rem;
+                outline: none;
+                border: none;
+                background: #D84727;
+                font-weight: 600;
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+                text-align: center;
+                color: #FFFFFF;
+                margin-bottom: 4rem;    
+            }
+        }
+    }
+}

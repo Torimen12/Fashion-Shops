@@ -1,0 +1,122 @@
+.profile-container{
+    padding: 0 5.3125rem 13rem 5.3125rem;
+    .profile-text{
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.75rem;
+        color:#333;
+        margin-bottom: 4rem;
+    }
+    .profile-content{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6rem;
+        .profile-content-left{
+            // flex: 1;
+            width: 48%;
+            .profile-img{
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.25rem;
+                line-height: 2rem;
+                text-align: center;
+                margin-bottom: 2.25rem;                                           
+                img{
+                    width: 13.75rem;
+                    height: 13.75rem;
+                }
+                button{
+                    width: 250px;
+                    height: 61px;
+                    border: 1px solid #D84727;
+                    box-sizing: border-box;  
+                    color: #D84727 !important;                  
+                }
+            }
+            .profile-content-left-detail{
+                padding: 2rem 2.5rem;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                .row{
+                    font-family: Taviraj;
+                    font-style: normal;
+                    margin-bottom: 1rem;
+                    .col-8{
+                        font-weight: 500;
+                        font-size: 1.5rem;
+                        line-height: 3rem;
+                        text-align: justify;                      
+                        color: #333333;                       
+                    }
+                    .col-4{
+                        font-weight: 600;
+                        font-size: 1.75rem;
+                        line-height: 3rem;                    
+                        text-align: center;
+                        color: #333333;
+                    }
+                }
+            }
+        }
+        &-right{
+            // flex: 1;
+            font-family: Taviraj;
+            font-style: normal;
+            padding: 2rem;
+            width: 48%;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            .profile-content-right-text{
+                font-weight: 600;
+                font-size: 2.25rem;
+                line-height: 3rem;
+                color: #333333;
+            }
+            .profile-content-right-detail{
+                form{
+                    .form-group{
+                        margin-bottom: 1.5rem;
+                        label{
+                            font-weight: bold;
+                            font-size: 1rem;
+                            line-height: 2rem;
+                            color: #000000;
+                        }
+                        input{
+                            font-weight: normal;
+                            font-size: 1.25rem;
+                            line-height: 1.5rem;    
+                            color: #333333;
+                            border-radius: 0;
+                            border: 1px solid #333 !important;
+                            border-width: 0 0 1px 0 !important;
+                            background: white !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .update-button{
+        display: flex;
+        justify-content: flex-end;
+        button{
+            width: 15.625rem;
+            height: 3.75rem;
+            background: #D84727;
+            border: none;
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            color: #FFFFFF;
+        }
+    }
+}

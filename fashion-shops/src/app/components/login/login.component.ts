@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faThumbsDown } from '@fortawesome/free-regular-svg-icons';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { RegisterComponent } from '../register/register.component';
 
@@ -9,21 +10,25 @@ import { RegisterComponent } from '../register/register.component';
 })
 export class LoginComponent implements OnInit {
   bsModalRef : BsModalRef;
-  isSubmitted =false;
-  constructor(private bsModalService: BsModalService) { }
+  isSubmitted =true;
+  id : number;
+  constructor(private bsModalService: BsModalService) { 
+  }
 
   ngOnInit(): void {
+    this.bsModalService.onShown.subscribe(data=>{
+      this.id = data.id;
+      console.log(this.id)
+    })
   }
   openRegister() { 
-    // this.isSubmitted =  true; 
-  }
-  open(){
-    this.bsModalRef =  this.bsModalService.show(RegisterComponent,{
+    // this.bsModalService._hideModal(this.id);
+    this.bsModalService._showBackdrop();
+    this.bsModalService.hide(1);
+    this.bsModalRef = this.bsModalService.show(RegisterComponent,{
       class: 'modal-lg  modal-dialog-centered',
+      id : 2,
     });
-  }
-  hide(){
-    this.bsModalService.hide();
   }
   submit(){
     return this.isSubmitted;

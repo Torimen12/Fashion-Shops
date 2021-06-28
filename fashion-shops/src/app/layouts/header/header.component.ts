@@ -19,6 +19,7 @@ export class HeaderComponent implements OnInit {
   openLogin() {
     this.bsModalRef = this.bsModalService.show(LoginComponent,{
       class: 'modal-lg  modal-dialog-centered',
+      id: 1
     });
   }
   ngOnInit(): void {

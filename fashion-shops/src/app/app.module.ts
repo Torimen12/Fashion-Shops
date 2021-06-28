@@ -17,7 +17,9 @@ import { ListProductsComponent } from './pages/home/list-products/list-products.
 import { FeedBackComponent } from './pages/home/feed-back/feed-back.component';
 import { LoginComponent } from './components/login/login.component';
 import {ModalModule} from 'ngx-bootstrap/modal';
-import { RegisterComponent } from './components/register/register.component'
+import { RegisterComponent } from './components/register/register.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { RegisterComponent } from './components/register/register.component'
     ListProductsComponent,
     FeedBackComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

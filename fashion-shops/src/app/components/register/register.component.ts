@@ -11,5 +11,7 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  submit(){
+    return true;
+  }
 }
