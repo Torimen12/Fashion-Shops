@@ -1,0 +1,191 @@
+<div class="products-container">
+    <div class="products-text">
+        <span>Trang chủ /</span>
+        <span>Sản phẩm /</span>
+        <span style="color: #D84727;">Đồng hồ </span>
+    </div>
+    <div class="products-content">
+        <div class="row">
+            <div class="col-3 products-content-left">
+                <div class="products-menu">
+                    <ul class="products-menu-list list-group">
+                        <li class="products-menu-item list-group-item" style="
+                            background: #D84727;
+                            border-radius: 10px 10px 0px 0px;
+                            font-weight: 500;
+                            font-size: 30px;
+                            line-height: 40px;
+                            height: 77px;
+                            color: #FFFFFF;
+                            text-align: center;
+                            justify-content: center;
+                        ">
+                            <span>
+                                Sản phẩm
+                            </span>
+                        </li>
+                        <li class="products-menu-item list-group-item">
+                            <span>
+                                Nổi bật
+                            </span>
+                        </li>
+                        <li class="products-menu-item list-group-item">
+                            <span>
+                                Bán chạy
+                            </span>
+                        </li>
+                        <li class="products-menu-item list-group-item">
+                            <span>
+                                Giảm giá
+                            </span>
+                        </li>
+                        <li class="products-menu-item list-group-item" data-bs-toggle="collapse" role="button"
+                            href="#collapseForClock" aria-expanded="false" aria-controls="collapseForClock"
+                            style="justify-content: space-between;">
+                            <span>
+                                Đồng hồ
+                            </span>
+                            <i class="bi bi-chevron-down"></i>
+                        </li>
+                        <div class="collapse" id="collapseForClock">
+
+                            <ul class="list-group" style="
+                                        text-align: center;">
+                                <li class="list-group-item">
+                                    <span>
+                                        Đồng hồ nam
+                                    </span> 
+                                </li>
+                                <li class="list-group-item">
+                                    <span>
+                                        Đồng hồ nữ
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <span>
+                                        Đồng hồ đôi
+                                    </span>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <li class="products-menu-item list-group-item">
+                            <span>
+                                Mắt kính
+                            </span>
+                        </li>
+                        <li class="products-menu-item list-group-item" style="border-radius: 0px 0px 10px 10px;">
+                            <span>
+                                Phụ kiện đính kèm
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="products-filter card">
+                    <p class="products-filter-header"
+                        style="
+                            font-weight: 500;
+                            font-size: 16px;
+                            color: #0B0B0C;
+                        "
+                    >
+                        Mức giá
+                    </p>
+                    <ul class="products-filter-list">
+                        <li class="products-filter-item form-check">
+                            <input type="checkbox" name="filter1">
+                            <label for="filter1">Dưới 1.000.000 VNĐ</label>
+                        </li>
+                        <li class="products-filter-item form-check">
+                            <input type="checkbox" name="filter2">
+                            <label for="filter2">1.000.000 - 2.500.000 VNĐ</label>
+                        </li>
+                        <li class="products-filter-item form-check">
+                            <input type="checkbox" name="filter3">
+                            <label for="filter3">2.500.000 - 5.000.000 VNĐ</label>
+                        </li>
+                        <li class="products-filter-item form-check">
+                            <input type="checkbox" name="filter4">
+                            <label for="filter4">5.000.000 - 7.500.000 VNĐ</label>
+                        </li>
+                        <li class="products-filter-item form-check">
+                            <input type="checkbox" name="filter5">
+                            <label for="filter5">7.500.000 - 10.000.000 VNĐ</label>
+                        </li>
+                        <li class="products-filter-item form-check">
+                            <input type="checkbox" name="filter6">
+                            <label for="filter6">10.000.000 - 15.000.000 VNĐ</label>
+                        </li>
+                        <li class="products-filter-item form-check" style="margin-bottom: 0;">
+                            <input type="checkbox" name="filter7">
+                            <label for="filter7">Trên 15.000.000 VNĐ</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-9 products-content-right">
+                <div class="row" style="margin-bottom: 3.5rem;">
+                    <div class="col-4">
+                        <app-product [className]="'product-container-vertical-inline'"></app-product>
+                    </div>
+                    <div class="col-4">
+                        <app-product [className]="'product-container-vertical-inline'"></app-product>
+                    </div>
+                    <div class="col-4">
+                        <app-product [className]="'product-container-vertical-inline'"></app-product>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 3.5rem;">
+                    <div class="col-4">
+                        <app-product [className]="'product-container-vertical-inline'"></app-product>
+                    </div>
+                    <div class="col-4">
+                        <app-product [className]="'product-container-vertical-inline'"></app-product>
+                    </div>
+                    <div class="col-4">
+                        <app-product [className]="'product-container-vertical-inline'"></app-product>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 3.5rem;">
+                    <div class="col-4">
+                        <app-product [className]="'product-container-vertical-inline'"></app-product>
+                    </div>
+                    <div class="col-4">
+                        <app-product [className]="'product-container-vertical-inline'"></app-product>
+                    </div>
+                    <div class="col-4">
+                        <app-product [className]="'product-container-vertical-inline'"></app-product>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <app-product [className]="'product-container-vertical-inline'"></app-product>
+                    </div>
+                    <div class="col-4">
+                        <app-product [className]="'product-container-vertical-inline'"></app-product>
+                    </div>
+                    <div class="col-4">
+                        <app-product [className]="'product-container-vertical-inline'"></app-product>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="margin-top: 5rem;">
+            Sản phẩm tương tự
+        </p>
+        <div class="row">
+            <div class="col-3">
+                <app-product [className]="'product-container-vertical-inline'"></app-product>
+            </div>
+            <div class="col-3">
+                <app-product [className]="'product-container-vertical-inline'"></app-product>
+            </div>
+            <div class="col-3">
+                <app-product [className]="'product-container-vertical-inline'"></app-product>
+            </div>
+            <div class="col-3">
+                <app-product [className]="'product-container-vertical-inline'"></app-product>
+            </div>
+        </div>
+    </div>
+</div>

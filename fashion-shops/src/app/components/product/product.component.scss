@@ -11,6 +11,9 @@
     &:hover{
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 20px 20px rgba(0, 0, 0, 0.04);
     }
+    .type-of-product{
+        display: none;
+    }
     .product-img{
         position: absolute;
         left: 7%;
@@ -106,6 +109,9 @@
         cursor: pointer;
         opacity: 0.9;
     }
+    .type-of-product{
+        display: none;
+    }
     .product-img{
         width: 8.125rem;
         height: 8.125rem;
@@ -142,6 +148,125 @@
         }
         .show-cart{
             display: none;
+        }
+    }
+}
+
+.product-container-vertical-inline{
+    position: relative;
+    // height: 23.75rem;
+    width: 16rem;
+    background: white;
+    color: #333;
+    padding-top: 16rem;
+    padding-left: 1.25rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    // padding-bottom: 3rem;
+    &:hover{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 20px 20px rgba(0, 0, 0, 0.04);
+    }
+    .type-of-product{
+        position: absolute;
+        top:-3%;
+        right: 3%;
+        background: #D84727;
+        width: 6.25rem ;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Taviraj;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #FFFFFF;
+    }
+    .product-img{
+        position: absolute;
+        left: 7%;
+        top:7%;
+        img{
+            width: 13.75rem;
+            height: 13.75rem;
+        }
+    }
+    .product-detail{
+        .product-name{
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 0.5rem;
+        }
+        .sale{
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #777777;
+            margin-bottom: 0.5rem;
+        }
+        .product-cost{
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #777777;
+            text-decoration: line-through #D93F3F solid;
+            margin-bottom: 0.5rem;
+        }
+        .product-cost-r{
+            font-family: Taviraj;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 32px;
+            color: #333333;
+            margin-bottom: 0.5rem;
+        }
+        .show-cart{
+            display: flex;
+            visibility: hidden;
+            .heart-icon{
+                width: 2.5rem;
+                height: 2.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #D84727;
+                color: #D84727;
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+            .btn-add{
+                outline: none;
+                border: none;
+                background: #D84727;
+                color: white;
+                font-family: Taviraj;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 21px;
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+    &:hover{
+        padding-bottom: 2rem;
+        .product-detail{
+            .show-cart{
+                visibility: visible;
+            }
         }
     }
 }

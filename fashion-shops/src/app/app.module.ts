@@ -19,6 +19,7 @@ import { LoginComponent } from './components/login/login.component';
 import {ModalModule} from 'ngx-bootstrap/modal';
 import { RegisterComponent } from './components/register/register.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { ProductsComponent } from './pages/products/products.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
     FeedBackComponent,
     LoginComponent,
     RegisterComponent,
-    ProfileComponent
+    ProfileComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

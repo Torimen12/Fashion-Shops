@@ -1,0 +1,80 @@
+.products-container{
+    padding: 0 5.3125rem 13.5rem 5.3125rem;
+    font-family: Taviraj;
+    font-style: normal;
+    .products-text{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 27px;
+        color: #333333;
+        margin-bottom: 4rem;
+    }
+    .products-content{
+        .row{
+            .products-content-left{
+                .products-menu{
+                    margin-bottom: 2.5rem;
+                    &-list{
+                        .products-menu-item{
+                            height: 65px;
+                            border-radius: 0;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #0B0B0C;  
+                            display: flex;
+                            align-items: center;                          
+                        }
+                        
+                    }
+                }
+                .products-filter{
+                    padding: 2rem 1.5rem;
+                    font-family: Taviraj;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 13px;
+                    line-height: 24px;                   
+                    color: #777777;
+                    &-list{
+                        padding: 0;
+                        margin: 0;
+                        .products-filter-item{
+                            display: flex;
+                            padding: 0;
+                            margin-bottom: 1rem;
+                            input{
+                                margin-right: 0.5rem;
+                                margin-top: 4.5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        p{
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 40px;
+            color: #333333;
+            margin-bottom: 4.5rem;
+        }
+    }
+
+}
+
+.collapsing ,.collapse{
+        .list-group{
+            width: 100%;
+            .list-group-item{
+                height: 65px;
+                width: 100%;
+                border-radius: 0;
+                text-align: center;
+                color: #777 !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+}
