@@ -1,4 +1,6 @@
 .product-container-vertical{
+    font-family: Taviraj;
+    font-style: normal;
     position: relative;
     // height: 23.75rem;
     width: 16rem;
@@ -14,6 +16,9 @@
     .type-of-product{
         display: none;
     }
+    .new-product{
+      display: none; 
+    } 
     .product-img{
         position: absolute;
         left: 7%;
@@ -25,16 +30,12 @@
     }
     .product-detail{
         .product-name{
-            font-family: Taviraj;
-            font-style: normal;
             font-weight: 500;
             font-size: 24px;
             line-height: 32px;
             margin-bottom: 0.5rem;
         }
         .sale{
-            font-family: Taviraj;
-            font-style: normal;
             font-weight: normal;
             font-size: 16px;
             line-height: 24px;
@@ -42,8 +43,6 @@
             margin-bottom: 0.5rem;
         }
         .product-cost{
-            font-family: Taviraj;
-            font-style: normal;
             font-weight: normal;
             font-size: 16px;
             line-height: 24px;
@@ -52,8 +51,6 @@
             margin-bottom: 0.5rem;
         }
         .product-cost-r{
-            font-family: Taviraj;
-            font-style: normal;
             font-weight: normal;
             font-size: 24px;
             line-height: 32px;
@@ -81,8 +78,6 @@
                 border: none;
                 background: #D84727;
                 color: white;
-                font-family: Taviraj;
-                font-style: normal;
                 font-weight: normal;
                 font-size: 16px;
                 line-height: 21px;
@@ -104,6 +99,8 @@
 }
 
 .product-container-horizontal{
+    font-family: Taviraj;
+    font-style: normal;
     display: flex;
     &:hover{
         cursor: pointer;
@@ -112,6 +109,9 @@
     .type-of-product{
         display: none;
     }
+    .new-product{
+      display: none; 
+    } 
     .product-img{
         width: 8.125rem;
         height: 8.125rem;
@@ -122,8 +122,6 @@
     }
     .product-detail{
         .product-name{
-            font-family: Taviraj;
-            font-style: normal;
             font-weight: 500;
             font-size: 24px;
             line-height: 32px;
@@ -153,8 +151,11 @@
 }
 
 .product-container-vertical-inline{
+    font-family: Taviraj;
+    font-style: normal;
     position: relative;
     // height: 23.75rem;
+    min-height: 25.5rem;
     width: 16rem;
     background: white;
     color: #333;
@@ -175,13 +176,26 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: Taviraj;
-        font-style: normal;
         font-weight: 500;
         font-size: 1rem;
         line-height: 1.5rem;
         color: #FFFFFF;
     }
+    .new-product{
+       position: absolute;
+       top: -3%;
+       right: 3%;
+       background: #01522D;
+       width: 71px;
+       height: 34px;
+       font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
     .product-img{
         position: absolute;
         left: 7%;
@@ -193,25 +207,15 @@
     }
     .product-detail{
         .product-name{
-            font-family: Taviraj;
-            font-style: normal;
             font-weight: 500;
             font-size: 24px;
             line-height: 32px;
             margin-bottom: 0.5rem;
         }
         .sale{
-            font-family: Taviraj;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 24px;
-            color: #777777;
-            margin-bottom: 0.5rem;
+            display: none;
         }
         .product-cost{
-            font-family: Taviraj;
-            font-style: normal;
             font-weight: normal;
             font-size: 16px;
             line-height: 24px;
@@ -220,8 +224,6 @@
             margin-bottom: 0.5rem;
         }
         .product-cost-r{
-            font-family: Taviraj;
-            font-style: normal;
             font-weight: normal;
             font-size: 24px;
             line-height: 32px;
@@ -249,8 +251,6 @@
                 border: none;
                 background: #D84727;
                 color: white;
-                font-family: Taviraj;
-                font-style: normal;
                 font-weight: normal;
                 font-size: 16px;
                 line-height: 21px;

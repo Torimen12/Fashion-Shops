@@ -4,17 +4,11 @@
         <div class="line"></div>
     </div>
     <div class="row">
-        <div class="col-xl-3">
-            <app-product [className]="classOfProduct"></app-product>
-        </div>
-        <div class="col-xl-3">
-            <app-product [className]="classOfProduct"></app-product>
-        </div>
-        <div class="col-xl-3">
-            <app-product [className]="classOfProduct"></app-product>
-        </div>
-        <div class="col-xl-3">
-            <app-product [className]="classOfProduct"></app-product>
+        <div class="col-xl-3" *ngFor="let product of productsNew">
+            <app-product [className]="classOfProduct"
+                [img]="product.img"
+                [name]="product.name"
+            ></app-product>
         </div>
     </div>
 </div>

@@ -20,7 +20,8 @@ import {ModalModule} from 'ngx-bootstrap/modal';
 import { RegisterComponent } from './components/register/register.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ProductsComponent } from './pages/products/products.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { MoneyPipe } from './pipe/money.pipe';
 
 @NgModule({
   declarations: [
@@ -39,13 +40,15 @@ import { ProductsComponent } from './pages/products/products.component';
     LoginComponent,
     RegisterComponent,
     ProfileComponent,
-    ProductsComponent
+    ProductsComponent,
+    MoneyPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,47 +11,11 @@
         </div>
     </div>
     <div class="row">
-        <div class="col">
-            <app-product [className]="classOfProduct"></app-product>
-        </div>
-        <div class="col">
-            <app-product [className]="classOfProduct"></app-product>
-        </div>
-        <div class="col">
-            <app-product [className]="classOfProduct"></app-product>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <app-product [className]="classOfProduct"></app-product>
-        </div>
-        <div class="col">
-            <app-product [className]="classOfProduct"></app-product>
-        </div>
-        <div class="col">
-            <app-product [className]="classOfProduct"></app-product>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <app-product [className]="classOfProduct"></app-product>
-        </div>
-        <div class="col">
-            <app-product [className]="classOfProduct"></app-product>
-        </div>
-        <div class="col">
-            <app-product [className]="classOfProduct"></app-product>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col col-line">
-            <div class="line"></div>
-        </div>
-        <div class="col col-btn">
-            <button type="button" class="btn-more">Xem thêm</button>
-        </div>
-        <div class="col col-line">
-            <div class="line"></div>
+        <div class="col-4" *ngFor="let product of products" style="margin-bottom: 2rem;">
+            <app-product [className]="classOfProduct"
+                [img]="product.img"
+                [name]="product.name"
+            ></app-product>
         </div>
     </div>
 </div>

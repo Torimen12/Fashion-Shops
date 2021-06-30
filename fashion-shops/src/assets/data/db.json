@@ -1,0 +1,178 @@
+{
+  "products": [
+    { 
+      "id":1,
+      "type":"watch",
+      "typeDetail":"female-watch",
+      "name":"female-watch1",
+      "sale": 0,
+      "cost": 1500000,
+      "isnew":1,
+      "img" :"../../../assets/products/watch/female-watch/female-watch1.jpg"
+    },
+    { 
+      "id":2,
+      "type":"watch",
+      "typeDetail":"female-watch",
+      "name":"female-watch2",
+      "sale": 30,
+      "cost": 1000000,
+      "isnew":0,
+      "img" :"../../../assets/products/watch/female-watch/female-watch2.jpg"
+    },
+    { 
+      "id":3,
+      "type":"watch",
+      "typeDetail":"female-watch",
+      "name":"female-watch3",
+      "sale": 10,
+      "cost": 2500000,
+      "isnew":0,
+      "img" :"../../../assets/products/watch/female-watch/female-watch3.jpg"
+    },
+    { 
+      "id":4,
+      "type":"watch",
+      "typeDetail":"female-watch",
+      "name":"female-watch4",
+      "sale": 20,
+      "cost": 3500000,
+      "isnew":0,
+      "img" :"../../../assets/products/watch/female-watch/female-watch4.jpg"
+    },
+    { 
+      "id":5,
+      "type":"watch",
+      "typeDetail":"female-watch",
+      "name":"female-watch5",
+      "sale": 0,
+      "cost": 5500000,
+      "isnew":1,
+      "img" :"../../../assets/products/watch/female-watch/female-watch5.jpg"
+    },
+    { 
+      "id":6,
+      "type":"watch",
+      "typeDetail":"female-watch",
+      "name":"female-watch6",
+      "sale": 20,
+      "cost": 15500000,
+      "isnew":0,
+      "img" :"../../../assets/products/watch/female-watch/female-watch6.jpg"
+    },
+    { 
+      "id":7,
+      "type":"watch",
+      "typeDetail":"female-watch",
+      "name":"female-watch7",
+      "sale": 0,
+      "cost": 10500000,
+      "isnew":1,
+      "img" :"../../../assets/products/watch/female-watch/female-watch7.jpg"
+    },
+    { 
+      "id":8,
+      "type":"watch",
+      "typeDetail":"female-watch",
+      "name":"female-watch8",
+      "sale": 0,
+      "cost": 12500000,
+      "isnew":1,
+      "img" :"../../../assets/products/watch/female-watch/female-watch8.jpg"
+    },{ 
+      "id":9,
+      "type":"watch",
+      "typeDetail":"female-watch",
+      "name":"female-watch9",
+      "sale": 30,
+      "cost": 15000000,
+      "isnew":0,
+      "img" :"../../../assets/products/watch/female-watch/female-watch9.jpg"
+    },
+    { 
+      "id":10,
+      "type":"watch",
+      "typeDetail":"male-watch",
+      "name":"male-watch1",
+      "sale": 30,
+      "cost": 13500000,
+      "isnew":0,
+      "img" :"../../../assets/products/watch/male-watch/male-watch1.jpg"
+    },
+    { 
+      "id":11,
+      "type":"watch",
+      "typeDetail":"male-watch",
+      "name":"male-watch2",
+      "sale": 10,
+      "cost": 8500000,
+      "isnew":0,
+      "img" :"../../../assets/products/watch/male-watch/male-watch2.jpg"
+    },
+    { 
+      "id":12,
+      "type":"watch",
+      "typeDetail":"male-watch",
+      "name":"male-watch3",
+      "sale": 20,
+      "cost": 4500000,
+      "isnew":0,
+      "img" :"../../../assets/products/watch/male-watch/male-watch3.jpg"
+    },
+    { 
+      "id":13,
+      "type":"watch",
+      "typeDetail":"male-watch",
+      "name":"male-watch4",
+      "sale": 20,
+      "cost": 6500000,
+      "isnew":0,
+      "img" :"../../../assets/products/watch/male-watch/male-watch4.jpg"
+    },
+    { 
+      "id":14,
+      "type":"watch",
+      "typeDetail":"male-watch",
+      "name":"male-watch5",
+      "sale": 30,
+      "cost": 9500000,
+      "isnew":0,
+      "img" :"../../../assets/products/watch/male-watch/male-watch5.jpg"
+    },
+    { 
+      "id":15,
+      "type":"watch",
+      "typeDetail":"male-watch",
+      "name":"male-watch6",
+      "sale": 0,
+      "cost": 19500000,
+      "isnew":0,
+      "img" :"../../../assets/products/watch/male-watch/male-watch6.jpg"
+    },
+    { 
+      "id":16,
+      "type":"watch",
+      "typeDetail":"male-watch",
+      "name":"male-watch7",
+      "sale": 20,
+      "cost": 1500000,
+      "isnew":0,
+      "img" :"../../../assets/products/watch/male-watch/male-watch7.jpg"
+    },
+    { 
+      "id":17,
+      "type":"watch",
+      "typeDetail":"male-watch",
+      "name":"male-watch8",
+      "sale": 10,
+      "cost": 1500000,
+      "isnew":0,
+      "img" :"../../../assets/products/watch/male-watch/male-watch8.jpg"
+    }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
+

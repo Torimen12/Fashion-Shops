@@ -1,6 +1,8 @@
 .header{
     height: 6.875rem;
     width: 100%;
+    max-width: 1200px;
+    margin: auto;
     padding: 1.875rem 5.3125rem;
     display: flex;
     justify-content: space-between;
@@ -25,7 +27,9 @@
                 line-height: 34px;
                 line-height: 100%;
                 flex: 1;
-                padding: 1rem 1rem;
+                // padding: 1rem 1rem;
+                padding-top:1rem ;
+                padding-bottom: 1rem;
                 border-radius: 5px;
                 &:hover{
                     cursor: pointer;

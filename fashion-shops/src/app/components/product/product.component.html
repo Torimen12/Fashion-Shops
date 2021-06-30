@@ -1,19 +1,25 @@
 <div [ngClass]="className">
-    <div class="type-of-product">
+    <div class="type-of-product" *ngIf = "sale!==0">
         <span>
-            25% OFF
+            {{sale}}% OFF
+        </span>
+    </div>
+    <div class="new-product" *ngIf = "isNew">
+        <span>
+            NEW
         </span>
     </div>
     <div class="product-img">
-        <img src="../../../assets/img/newproduct1.png" alt="">
+        <!-- <img src="../../../assets/img/newproduct1.png" alt=""> -->
+        <img src="{{img}}" alt="">
     </div>
     <div class="product-detail">
         <p class="product-name">
-            Singo Maple
+            {{name}}
         </p>
-        <p class="sale">Giảm 20%</p>
-        <p class="product-cost">1.500.000 VNĐ</p>
-        <p class="product-cost-r">1.264.000 VNĐ</p>
+        <p class="sale">Giảm {{sale}}%</p>
+        <p class="product-cost" *ngIf = "sale!==0">{{cost | money }} VNĐ</p>
+        <p class="product-cost-r">{{cost*(100-sale)/100 | money}} VNĐ</p>
         <div class="show-cart">
             <div class="heart-icon" style="margin-right: 0.5rem;">
                 <fa-icon [icon]="faHeart"></fa-icon>
