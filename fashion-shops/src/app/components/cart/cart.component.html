@@ -1,0 +1,55 @@
+<div class="cart-container">
+    <div class="cart-item" *ngFor="let product of cart">
+        <div class="cart-left">
+            <app-product [className]="'product-container-horizontal'"
+                [prod]="product.product"
+            ></app-product>
+        </div>
+        <div class="cart-right">
+            <div class="wrap-selection-text">
+                Chọn đóng gói
+            </div>
+            <div class="wrap-selection dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Hộp gỗ (miễn phí)
+                </button>
+            </div>
+            <div class="product-cost">
+                <span>
+                    <i class="bi bi-dash-square" (click)="removeItem(product)"></i>
+                </span>
+                <span class="num">{{product.number}}</span>
+                <span>
+                    <i class="bi bi-plus-square" (click)="addItem(product)"></i>
+                </span>
+                <span class="cost">{{product.cost*(100-product.sale)/100*product.number|money}} VNĐ</span>
+                <span>
+                    <i class="bi bi-trash"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="total-container">
+        <div class="total-container-left">
+            <span class="discount-code">Mã giảm giá</span>
+            <button>MATOANew</button>
+            <span class="discount-code-num">
+                10% OFF
+            </span>
+        </div>
+        <div class="total-container-right">
+            <span class="total-text">Tạm tính</span>
+            <div class="total-num">
+                <span class="num-cross">
+                    {{totalCost|money}} VNĐ
+                </span>
+                <span class="num-real">
+                    {{totalCost*0.9|money}} VNĐ
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <button>Thanh toán</button>
+</div>

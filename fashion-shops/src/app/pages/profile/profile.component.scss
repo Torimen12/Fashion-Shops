@@ -2,8 +2,6 @@
     padding: 0 5.3125rem 13rem 5.3125rem;
     .profile-text{
         font-family: Taviraj;
-        font-style: normal;
-        font-weight: normal;
         font-size: 1rem;
         line-height: 1.75rem;
         color:#333;
@@ -20,9 +18,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center; 
-                font-family: Taviraj;
-                font-style: normal;
-                font-weight: 500;
+                font-family: Taviraj-500;
                 font-size: 1.25rem;
                 line-height: 2rem;
                 text-align: center;
@@ -45,17 +41,16 @@
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 .row{
                     font-family: Taviraj;
-                    font-style: normal;
                     margin-bottom: 1rem;
                     .col-8{
-                        font-weight: 500;
+                        font-family: Taviraj-500;
                         font-size: 1.5rem;
                         line-height: 3rem;
                         text-align: justify;                      
                         color: #333333;                       
                     }
                     .col-4{
-                        font-weight: 600;
+                        font-family: Taviraj-600;
                         font-size: 1.75rem;
                         line-height: 3rem;                    
                         text-align: center;
@@ -67,13 +62,12 @@
         &-right{
             // flex: 1;
             font-family: Taviraj;
-            font-style: normal;
             padding: 2rem;
             width: 48%;
             background: #FFFFFF;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             .profile-content-right-text{
-                font-weight: 600;
+                font-family: Taviraj-600;
                 font-size: 2.25rem;
                 line-height: 3rem;
                 color: #333333;
@@ -83,13 +77,13 @@
                     .form-group{
                         margin-bottom: 1.5rem;
                         label{
-                            font-weight: bold;
+                            font-family: Taviraj-700;
                             font-size: 1rem;
                             line-height: 2rem;
                             color: #000000;
                         }
                         input{
-                            font-weight: normal;
+                            font-family: Taviraj;
                             font-size: 1.25rem;
                             line-height: 1.5rem;    
                             color: #333333;
@@ -111,9 +105,7 @@
             height: 3.75rem;
             background: #D84727;
             border: none;
-            font-family: Taviraj;
-            font-style: normal;
-            font-weight: 500;
+            font-family: Taviraj-500;
             font-size: 1.25rem;
             line-height: 2rem;
             color: #FFFFFF;

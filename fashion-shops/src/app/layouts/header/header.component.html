@@ -1,10 +1,10 @@
 <div class="header">
-    <div class="logo">
+    <div class="logo" routerLink="/home">
         <img src="../../../assets/img/logo.png" alt="">
     </div>
     <div class="nav">
         <ul class="navigation">
-            <li class="navigation-link">Sản phẩm</li>
+            <li class="navigation-link" routerLink="/products"> Sản phẩm</li>
             <li class="navigation-link">Ưu đãi</li>
             <li class="navigation-link">Về chúng tôi</li>
             <li class="navigation-link">Hỗ trợ</li>
@@ -22,7 +22,7 @@
             font-size: 18px;
             ">Đăng nhập</span>
         </div>
-        <div class="icon icon-cart">
+        <div class="icon icon-cart" (click)="openCart()">
             <fa-icon [icon]="faCart"></fa-icon>
         </div>
     </div>

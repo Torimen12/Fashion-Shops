@@ -1,30 +1,29 @@
 <div [ngClass]="className">
-    <div class="type-of-product" *ngIf = "sale!==0">
+    <div class="type-of-product" *ngIf = "prod.sale!==0">
         <span>
-            {{sale}}% OFF
+            {{prod.sale}}% OFF
         </span>
     </div>
-    <div class="new-product" *ngIf = "isNew">
+    <div class="new-product" *ngIf = "prod.isnew">
         <span>
             NEW
         </span>
     </div>
     <div class="product-img">
-        <!-- <img src="../../../assets/img/newproduct1.png" alt=""> -->
-        <img src="{{img}}" alt="">
+        <img src="{{prod.img}}" alt="">
     </div>
     <div class="product-detail">
         <p class="product-name">
-            {{name}}
+            {{prod.name}}
         </p>
-        <p class="sale">Giảm {{sale}}%</p>
-        <p class="product-cost" *ngIf = "sale!==0">{{cost | money }} VNĐ</p>
-        <p class="product-cost-r">{{cost*(100-sale)/100 | money}} VNĐ</p>
+        <p class="sale" *ngIf = "prod.sale!==0">Giảm {{prod.sale}}%</p>
+        <p class="product-cost" *ngIf = "prod.sale!==0">{{prod.cost | money }} VNĐ</p>
+        <p class="product-cost-r">{{prod.cost*(100-prod.sale)/100 | money}} VNĐ</p>
         <div class="show-cart">
             <div class="heart-icon" style="margin-right: 0.5rem;">
                 <fa-icon [icon]="faHeart"></fa-icon>
             </div>
-            <button class="btn-add" type="button">Thêm vào giỏ hàng</button>
+            <button class="btn-add" type="button" (click)="addToCart()">Thêm vào giỏ hàng</button>
         </div>
     </div>
 </div>

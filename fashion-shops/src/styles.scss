@@ -67,3 +67,53 @@ html[xmlns] .clearfix {
 /*Add your css into here*/
 .fl_left{ float: left;}
 .fl_right{ float: right;}
+
+.modal-xl {
+    max-width: 65rem !important;
+    // max-height: 80vh !important;
+}
+
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/font/Nunito/Nunito-Regular.ttf') format('truetype');
+    font-weight:normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Taviraj';
+    src: url('./assets/font/Taviraj/Taviraj-Regular.ttf') format('truetype');
+    font-weight:normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Taviraj-300';
+    src: url('./assets/font/Taviraj/Taviraj-Light.ttf') format('truetype');
+    font-weight:normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Taviraj-500';
+    src: url('./assets/font/Taviraj/Taviraj-Medium.ttf') format('truetype');
+    font-weight:normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Taviraj-600';
+    src: url('./assets/font/Taviraj/Taviraj-SemiBold.ttf') format('truetype');
+    font-weight:normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Taviraj-700';
+    src: url('./assets/font/Taviraj/Taviraj-Bold.ttf') format('truetype');
+    font-weight:normal;
+    font-style: normal;
+}
+
+

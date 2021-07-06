@@ -22,6 +22,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MoneyPipe } from './pipe/money.pipe';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { MoneyPipe } from './pipe/money.pipe';
     RegisterComponent,
     ProfileComponent,
     ProductsComponent,
-    MoneyPipe
+    MoneyPipe,
+    CartComponent
   ],
   imports: [
     BrowserModule,

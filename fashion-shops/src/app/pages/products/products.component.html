@@ -12,7 +12,7 @@
                         <li class="products-menu-item list-group-item" style="
                             background: #D84727;
                             border-radius: 10px 10px 0px 0px;
-                            font-weight: 500;
+                            font-family: Taviraj-500;
                             font-size: 30px;
                             line-height: 40px;
                             height: 77px;
@@ -51,12 +51,12 @@
 
                             <ul class="list-group" style="
                                         text-align: center;">
-                                <li class="list-group-item" style="cursor: pointer;" (click)="renderMaleWatch()">
+                                <li class="list-group-item" style="cursor: pointer;" (click)="unCheck();renderMaleWatch()">
                                     <span>
                                         Đồng hồ nam
                                     </span> 
                                 </li>
-                                <li class="list-group-item"  style="cursor: pointer;" (click)="renderFemaleWatch()">
+                                <li class="list-group-item"  style="cursor: pointer;" (click)="unCheck();renderFemaleWatch()">
                                     <span>
                                         Đồng hồ nữ
                                     </span>
@@ -84,7 +84,7 @@
                 <div class="products-filter card">
                     <p class="products-filter-header"
                         style="
-                            font-weight: 500;
+                            font-family: Taviraj-500;
                             font-size: 16px;
                             color: #0B0B0C;
                             margin-bottom: 1rem;
@@ -93,6 +93,10 @@
                         Mức giá
                     </p>
                     <ul class="products-filter-list">
+                        <li class="products-filter-item form-check" (click)="unCheck()">
+                            <input type="radio" id="filter" name="filter">
+                            <label for="filter">All</label>
+                        </li>
                         <li class="products-filter-item form-check" (click)="renderFilter1()">
                             <input type="radio" id="filter1" name="filter">
                             <label for="filter1">Dưới 1.000.000 VNĐ</label>
@@ -128,11 +132,7 @@
                 <div class="row">
                         <div class="col-4" *ngFor= "let product of productsForRender" style="margin-bottom: 3.5rem;">
                             <app-product [className]="'product-container-vertical-inline'"
-                                [img]="product.img"
-                                [name] = "product.name"
-                                [cost] = "product.cost"
-                                [sale] = "product.sale"
-                                [isNew] = "product.isnew"
+                                [prod]="product"
                             >
                             </app-product>
                         </div>
@@ -145,11 +145,7 @@
         <div class="row">
             <div class="col-3" *ngFor = "let product of productsSuggestion">
                 <app-product [className]="'product-container-vertical-inline'"
-                    [name]= "product.name"
-                    [img] = "product.img"
-                    [cost]="product.cost"
-                    [sale]="product.sale"
-                    [isNew] = "product.isnew"
+                    [prod]="product"
                 >
                 </app-product>
             </div>

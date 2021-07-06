@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Attribute, Component, OnInit } from '@angular/core';
 import {HttpService} from '../../service/http.service';
 import {product} from '../../service/product'
 
@@ -163,5 +163,12 @@ export class ProductsComponent implements OnInit {
         return prod.cost>=15000000;
       })
     }
+  }
+
+  unCheck(){
+    let e = document.querySelector("#filter");
+    console.log(e);
+    e["checked"]=true;
+    this.renderAll();
   }
 }

@@ -1,15 +1,15 @@
 .product-container-vertical{
+    // max-height: 25.75rem !important;
     font-family: Taviraj;
-    font-style: normal;
     position: relative;
     // height: 23.75rem;
     width: 16rem;
     background: white;
     color: #333;
-    padding-top: 13rem;
+    padding-top: 13.25rem;
     padding-left: 1.25rem;
+    padding-right: 1.25rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    // padding-bottom: 3rem;
     &:hover{
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 20px 20px rgba(0, 0, 0, 0.04);
     }
@@ -22,7 +22,7 @@
     .product-img{
         position: absolute;
         left: 7%;
-        top:-7%;
+        top:-9.75%;
         img{
             width: 13.75rem;
             height: 13.75rem;
@@ -30,32 +30,39 @@
     }
     .product-detail{
         .product-name{
-            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;             
+            font-family: Taviraj-500;
             font-size: 24px;
             line-height: 32px;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0rem;
         }
         .sale{
-            font-weight: normal;
+            font-family: Taviraj;
             font-size: 16px;
             line-height: 24px;
             color: #777777;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0rem;
         }
         .product-cost{
-            font-weight: normal;
+            white-space: nowrap;
+            overflow: hidden;
+            font-family: Taviraj;
             font-size: 16px;
             line-height: 24px;
             color: #777777;
             text-decoration: line-through #D93F3F solid;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0rem;
         }
         .product-cost-r{
-            font-weight: normal;
+            white-space: nowrap;
+            overflow: hidden;
+            font-family: Taviraj;
             font-size: 24px;
             line-height: 32px;
             color: #333333;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
         }
         .show-cart{
             display: flex;
@@ -78,7 +85,7 @@
                 border: none;
                 background: #D84727;
                 color: white;
-                font-weight: normal;
+                font-family: Taviraj;
                 font-size: 16px;
                 line-height: 21px;
                 &:hover{
@@ -100,7 +107,6 @@
 
 .product-container-horizontal{
     font-family: Taviraj;
-    font-style: normal;
     display: flex;
     &:hover{
         cursor: pointer;
@@ -118,27 +124,34 @@
         margin-right: 1.5rem;
         img{
             height: 8.125rem;
+            width: 8.125rem;
         }
     }
     .product-detail{
-        .product-name{
-            font-weight: 500;
+        .product-name{        
+            font-family: Taviraj-500;
             font-size: 24px;
             line-height: 32px;
             color: #333333;
+            margin-bottom: 0.5rem !important;
         }
         .sale{
             display: none;
         }
         .product-cost{
-            font-weight: normal;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-bottom: 0 !important;
+            font-family: Taviraj;
             font-size: 16px;
             line-height: 24px;
             color: #777777;
             text-decoration: line-through #D93F3F solid;
         }
         .product-cost-r{
-            font-weight: normal;
+            white-space: nowrap;
+            overflow: hidden;
+            font-family: Taviraj;
             font-size: 24px;
             line-height: 32px;
             color: #333333;
@@ -152,7 +165,6 @@
 
 .product-container-vertical-inline{
     font-family: Taviraj;
-    font-style: normal;
     position: relative;
     // height: 23.75rem;
     min-height: 25.5rem;
@@ -161,6 +173,7 @@
     color: #333;
     padding-top: 16rem;
     padding-left: 1.25rem;
+    padding-right: 1.25rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     // padding-bottom: 3rem;
     &:hover{
@@ -176,7 +189,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-weight: 500;
+        font-family: Taviraj-500;
         font-size: 1rem;
         line-height: 1.5rem;
         color: #FFFFFF;
@@ -188,7 +201,7 @@
        background: #01522D;
        width: 71px;
        height: 34px;
-       font-weight: 500;
+       font-family: Taviraj-500;
         font-size: 16px;
         line-height: 24px;
         color: #FFFFFF;
@@ -206,8 +219,12 @@
         }
     }
     .product-detail{
+        max-height: 8rem;
         .product-name{
-            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;       
+            text-overflow: ellipsis;      
+            font-family: Taviraj-500;
             font-size: 24px;
             line-height: 32px;
             margin-bottom: 0.5rem;
@@ -216,7 +233,9 @@
             display: none;
         }
         .product-cost{
-            font-weight: normal;
+            white-space: nowrap;
+            overflow: hidden;
+            font-family: Taviraj;
             font-size: 16px;
             line-height: 24px;
             color: #777777;
@@ -224,7 +243,9 @@
             margin-bottom: 0.5rem;
         }
         .product-cost-r{
-            font-weight: normal;
+            white-space: nowrap;
+            overflow: hidden;
+            font-family: Taviraj;
             font-size: 24px;
             line-height: 32px;
             color: #333333;
@@ -251,7 +272,7 @@
                 border: none;
                 background: #D84727;
                 color: white;
-                font-weight: normal;
+                font-family: Taviraj;
                 font-size: 16px;
                 line-height: 21px;
                 &:hover{

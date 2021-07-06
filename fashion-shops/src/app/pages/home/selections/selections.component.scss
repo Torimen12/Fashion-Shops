@@ -13,23 +13,17 @@
         flex: 1;
         .title{
             font-family: Taviraj;
-            font-style: normal;
-            font-weight: normal;
             font-size: 28px;
             line-height: 32px;            
             color: #333;
         }
         .detail{
             font-family: Nunito;
-            font-style: normal;
-            font-weight: normal;
             font-size: 16px;
             line-height: 24px;
         }
         .more{
-            font-family: Taviraj;
-            font-style: normal;
-            font-weight: 600;
+            font-family: Taviraj-600;
             font-size: 16px;
             line-height: 27px;
             &:hover{

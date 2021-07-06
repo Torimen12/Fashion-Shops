@@ -5,9 +5,8 @@
     justify-content: center;
     .login{
         font-family: Taviraj;
-        font-style: normal;
         .login-text{
-            font-weight: 600;
+            font-family: Taviraj-600;
             font-size: 1.5rem;
             line-height: 2.5rem;
             text-align: center;
@@ -17,7 +16,7 @@
         .login-form{
             .form-group{
                 label{
-                    font-weight: normal;
+                    font-family: Taviraj;
                     font-size: 1rem;
                     line-height: 2rem;               
                     color: #000000;
@@ -32,7 +31,7 @@
                 }
             }
             .fogot{
-                font-weight: normal;
+                font-family: Taviraj;
                 font-size: 1rem;
                 line-height: 1.5rem;        
                 color: #999999; 
@@ -44,7 +43,7 @@
             outline: none;
             border: none;
             background: #D84727;
-            font-weight: 600;
+            font-family: Taviraj-600;
             font-size: 1.2rem;
             line-height: 1.5rem;
             text-align: center;
@@ -54,7 +53,7 @@
             .register{
                 text-align: center;
                 .text-small{
-                    font-weight: normal;
+                    font-family: Taviraj;
                     font-size: 1rem;
                     line-height: 1.5rem;     
                     text-align: center;             
@@ -64,7 +63,7 @@
                     outline: none;
                     border: none;
                     background: white;
-                    font-weight: 600;
+                    font-family: Taviraj-600;
                     font-size: 1rem;
                     line-height: 1.5rem;              
                     text-align: center;                

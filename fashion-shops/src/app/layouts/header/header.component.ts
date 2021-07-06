@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import {faSearch, faCartPlus } from '@fortawesome/free-solid-svg-icons'
 import { BsModalService,BsModalRef } from 'ngx-bootstrap/modal';
+import { CartComponent } from 'src/app/components/cart/cart.component';
 import { LoginComponent } from 'src/app/components/login/login.component';
 
 @Component({
@@ -21,6 +22,13 @@ export class HeaderComponent implements OnInit {
       class: 'modal-lg  modal-dialog-centered',
       id: 1
     });
+  }
+
+  openCart(){
+    this.bsModalRef = this.bsModalService.show(CartComponent,{
+      class:'modal-xl modal-dialog-centered',
+      id:3
+    })
   }
   ngOnInit(): void {
   }
