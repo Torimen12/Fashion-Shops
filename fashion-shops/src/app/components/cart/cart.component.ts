@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { cartItem } from 'src/app/interface/cartItem';
 import { CartService } from 'src/app/service/cart.service';
 import { product } from '../../service/product'
@@ -9,20 +10,32 @@ import { product } from '../../service/product'
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
+  //list products in cart, list products is arr product
   productsCart: product[] = [];
   totalCost: number = 0;
+  //list items in cart, list items is arr cartItem
   cart: cartItem[] = [];
 
-  constructor(private cartService: CartService) { }
+  bsModalRef : BsModalRef;
+  id:number;
+
+
+  constructor(private cartService: CartService, private bsModalService: BsModalService) { }
   ngOnInit(): void {
+    //Add products in to cart
     this.productsCart = this.cartService.getProductsCart();
     this.resetTotalCost();
     console.log("total cost:", this.totalCost);
     console.log("products in cart:", this.productsCart);
-    this.addCart();
+    this.addItemToCart();
+    //bsModalref
+    this.bsModalService.onShown.subscribe(data=>{
+      this.id = data.id;
+      console.log("id:",this.id)
+    })
   }
 
-  addCart() {
+  addItemToCart() {
     this.productsCart.forEach(prod => {
       let has: boolean = false;
       this.cart.forEach(prod1 => {
@@ -40,7 +53,7 @@ export class CartComponent implements OnInit {
     })
   }
 
-  addItem(product: cartItem) {
+  increaseItem(product: cartItem) {
     this.productsCart.push(product.product);
     for (let i = 0; i < this.cart.length; i++) {
       if (product.product.id === this.cart[i].product.id) {
@@ -50,7 +63,7 @@ export class CartComponent implements OnInit {
     this.resetTotalCost()
   }
 
-  removeItem(product: cartItem) {
+  reduceItem(product: cartItem) {
     if (product.number > 0) {
       let temp = 0;
       for (let i = 0; i < this.productsCart.length; i++) {
@@ -76,5 +89,9 @@ export class CartComponent implements OnInit {
     this.productsCart.forEach(pro => {
       this.totalCost = this.totalCost + pro.cost * (100 - pro.sale) / 100
     })
+  }
+
+  hideCart(){
+    this.bsModalService.hide(3);
   }
 }

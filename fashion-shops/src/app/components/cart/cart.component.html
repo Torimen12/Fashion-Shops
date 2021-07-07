@@ -16,11 +16,11 @@
             </div>
             <div class="product-cost">
                 <span>
-                    <i class="bi bi-dash-square" (click)="removeItem(product)"></i>
+                    <i class="bi bi-dash-square" (click)="reduceItem(product)"></i>
                 </span>
                 <span class="num">{{product.number}}</span>
                 <span>
-                    <i class="bi bi-plus-square" (click)="addItem(product)"></i>
+                    <i class="bi bi-plus-square" (click)="increaseItem(product)"></i>
                 </span>
                 <span class="cost">{{product.cost*(100-product.sale)/100*product.number|money}} VNĐ</span>
                 <span>
@@ -51,5 +51,5 @@
         </div>
     </div>
 
-    <button>Thanh toán</button>
+    <button routerLink="/payment" (click)="hideCart()">Thanh toán</button>
 </div>
