@@ -1,0 +1,30 @@
+.payment-detail-container{
+    background: white;
+    padding: 2rem;
+    .payment-detail-header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        p{
+            font-family: Taviraj-600;
+            font-size: 2rem;
+            line-height: 3rem; 
+            color: #333333;            
+        }
+        span{
+            font-family: Taviraj-600;
+            font-size: 1.5rem;
+            line-height: 3rem;
+            color: #D93F3F;
+        }
+    }
+    .payment-detail-content{
+        p{
+            font-family: Nunito;
+            font-size: 1.125rem;
+            line-height: 2rem;
+            color: #333333;
+            margin-bottom: 0;
+        }
+    }
+}

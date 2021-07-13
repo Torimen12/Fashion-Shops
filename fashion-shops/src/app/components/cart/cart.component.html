@@ -1,11 +1,11 @@
 <div class="cart-container">
     <div class="cart-item" *ngFor="let product of cart">
-        <div class="cart-left">
+        <div class="cart-left" *ngIf="product.number>0">
             <app-product [className]="'product-container-horizontal'"
                 [prod]="product.product"
             ></app-product>
         </div>
-        <div class="cart-right">
+        <div class="cart-right" *ngIf="product.number>0" >
             <div class="wrap-selection-text">
                 Chọn đóng gói
             </div>
@@ -51,5 +51,5 @@
         </div>
     </div>
 
-    <button routerLink="/payment" (click)="hideCart()">Thanh toán</button>
+    <button routerLink="/check-order" (click)="hideCart()">Thanh toán</button>
 </div>

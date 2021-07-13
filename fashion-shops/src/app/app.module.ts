@@ -23,8 +23,14 @@ import { ProductsComponent } from './pages/products/products.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MoneyPipe } from './pipe/money.pipe';
 import { CartComponent } from './components/cart/cart.component';
-import { PaymentComponent } from './pages/payment/payment.component';
+import { CheckOrderComponent } from './pages/check-order/check-order.component';
 import { AddressComponent } from './components/address/address.component';
+import { BillDetailComponent } from './components/bill-detail/bill-detail.component';
+import { EmptyCartComponent } from './components/empty-cart/empty-cart.component';
+import {PaymentComponent } from './pages/payment/payment.component';
+import { PaymentDetailComponent } from './components/payment-detail/payment-detail.component';
+import { OrderDetailComponent } from './components/order-detail/order-detail.component';
+import { PaymentMethodComponent } from './components/payment-method/payment-method.component'
 
 @NgModule({
   declarations: [
@@ -46,8 +52,14 @@ import { AddressComponent } from './components/address/address.component';
     ProductsComponent,
     MoneyPipe,
     CartComponent,
-    PaymentComponent,
+    CheckOrderComponent,
     AddressComponent,
+    BillDetailComponent,
+    EmptyCartComponent,
+    PaymentComponent,
+    PaymentDetailComponent,
+    OrderDetailComponent,
+    PaymentMethodComponent
   ],
   imports: [
     BrowserModule,

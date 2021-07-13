@@ -1,0 +1,35 @@
+<div class="payment-container">
+    <div class="payment-header">
+        <div class="payment-header-item">
+            <i class="bi bi-basket-fill" style="color: #D84727;"></i>
+            <span style="
+                    color: #D84727;
+                    font-family: Taviraj-600;
+                ">
+                1. Kiểm tra
+            </span>
+        </div>
+        <div class="cross"></div>
+        <div class="payment-header-item">
+            <i class="bi bi-credit-card"></i>
+            <span>2. Thanh toán</span>
+        </div>
+        <div class="cross"></div>
+        <div class="payment-header-item">
+            <i class="bi bi-card-checklist"></i>
+            <span>3. Xác nhận</span>
+        </div>        
+    </div>
+    <div class="payment-content">
+        <div class="payment-content-left">
+            <app-bill-detail></app-bill-detail>
+        </div>
+        <div class="payment-content-right">
+            <app-address></app-address>
+            <div class="buttons">
+                <button class="continue" routerLink="/products">Tiếp tục mua sắm</button>
+                <button class="payment" routerLink="/payment">Tiến hành thanh toán</button>
+            </div>
+        </div>
+    </div>
+</div>

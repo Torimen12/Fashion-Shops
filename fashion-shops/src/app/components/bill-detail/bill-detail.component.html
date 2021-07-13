@@ -1,0 +1,30 @@
+<div class="bill">
+    <div class="bill-header">
+        Chi tiết hóa đơn
+    </div>
+    <div class="bill-content">
+        <div class="bill-content-detail">
+            <span>Tạm tính</span>
+            <span>{{totalCost*0.9|money}} VNĐ</span>
+        </div>
+        <div class="bill-content-detail">
+            <span>Phí vận chuyển</span>
+            <span>50.000 VNĐ</span>
+        </div>
+        <div class="bill-content-detail">
+            <span>Mã giảm giá</span>
+            <span>MATOANew</span>
+        </div>
+        <div class="bill-content-detail">
+            <span> Phí đóng gói</span>
+            <span>0 VNĐ</span>
+        </div>
+    </div>
+    <div class="bill-footer">
+        <div class="cross"></div>
+        <div class="total">
+            <span class="total-text"> Tổng cộng</span>
+            <span class="total-num">{{totalCost*0.9+50000|money}} VNĐ</span>
+        </div>
+    </div>
+</div>

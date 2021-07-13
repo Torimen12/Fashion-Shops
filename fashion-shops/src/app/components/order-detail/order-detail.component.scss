@@ -1,0 +1,40 @@
+.order-detail-container{
+    background: white;
+    padding: 2rem;
+    .order-detail-header{
+        margin-bottom: 2.5rem;
+        p{
+            font-family: Taviraj-600;
+            font-size: 2rem;
+            line-height: 3rem;
+            color: #333333;
+        }
+    }
+    .order-detail-content{
+        .row{
+            margin-bottom: 1rem;
+            .col-5{
+                p{
+                    font-family: Taviraj-600;
+                    font-size: 1.25rem;
+                    line-height: 2rem;
+                    color: #333333;
+                }
+            }
+            .col-7{
+                .title{
+                    font-family: Taviraj;
+                    font-size: 1.25rem;
+                    line-height: 2rem;
+                    color: #333333;
+                }
+                .content{
+                    font-family: Nunito;
+                    font-size: 1rem;
+                    line-height: 1.5rem;     
+                    color: #777777;
+                }
+            }
+        }
+    }
+}

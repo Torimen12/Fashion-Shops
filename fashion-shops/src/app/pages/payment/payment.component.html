@@ -1,18 +1,20 @@
 <div class="payment-container">
     <div class="payment-header">
         <div class="payment-header-item">
-            <i class="bi bi-basket-fill" style="color: #D84727;"></i>
-            <span style="
-                    color: #D84727;
-                    font-family: Taviraj-600;
-                ">
+            <i class="bi bi-basket-fill"></i>
+            <span>
                 1. Kiểm tra
             </span>
         </div>
         <div class="cross"></div>
         <div class="payment-header-item">
-            <i class="bi bi-credit-card"></i>
-            <span>2. Thanh toán</span>
+            <i class="bi bi-credit-card" style="color: #D84727;"></i>
+            <span
+                style="
+                    color: #D84727;
+                    font-family: Taviraj-600;
+                "
+            >2. Thanh toán</span>
         </div>
         <div class="cross"></div>
         <div class="payment-header-item">
@@ -21,42 +23,29 @@
         </div>        
     </div>
     <div class="payment-content">
-        <div class="payment-content-left">
-            <div class="payment-content-left-header">
-                Chi tiết đơn hàng
-            </div>
-            <div class="payment-content-left-content">
-                <div class="payment-content-left-content-detail">
-                    <span>Tạm tính</span>
-                    <span>2.152.000 VNĐ</span>
+        <div class="row top">
+            <div class="payment-content-left col-6">
+                <div class="col-12">
+                    <app-bill-detail></app-bill-detail>
                 </div>
-                <div class="payment-content-left-content-detail">
-                    <span>Phí vận chuyển</span>
-                    <span>50.000 VNĐ</span>
-                </div>
-                <div class="payment-content-left-content-detail">
-                    <span>Mã giảm giá</span>
-                    <span>MATOANew</span>
-                </div>
-                <div class="payment-content-left-content-detail">
-                    <span> Phí đóng gói</span>
-                    <span>250.000 VNĐ</span>
+                <div class="col-12" style="min-height: 251px;
+                background: white;">
+                    <app-payment-detail></app-payment-detail>
                 </div>
             </div>
-            <div class="payment-content-left-footer">
-                <div class="cross"></div>
-                <div class="total">
-                    <span class="total-text"> Tổng cộng</span>
-                    <span class="total-num">2.452.000 VNĐ</span>
+            <div class="payment-content-right col-6">
+                <div class="col-12">
+                    <app-order-detail></app-order-detail>
                 </div>
             </div>
         </div>
-        <div class="payment-content-right">
-            <app-address></app-address>
-            <div class="buttons">
-                <button class="continue">Tiếp tục mua sắm</button>
-                <button class="payment">Tiến hành thanh toán</button>
+        <div class="row mid" >
+            <div class="col-12">
+                <app-payment-method></app-payment-method>
             </div>
+        </div>
+        <div class="row button">
+            <button >Tiến hành thanh toán</button>
         </div>
     </div>
 </div>

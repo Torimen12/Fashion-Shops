@@ -29,12 +29,11 @@ export class ProductsComponent implements OnInit {
       this.femaleWatch = this.products.filter(product=>{
         return product.type==="watch"&& product.typeDetail === "female-watch";
       })
-      console.log("male:",this.maleWatch);
+      console.log("female:",this.femaleWatch);
       let prS = this.products.filter(product=>{
         return product.isnew===1;
       })
       this.productsSuggestion = [prS[0],prS[1],prS[2],prS[3]];
-      console.log("Suugg:",this.productsSuggestion)
     })
   } 
   

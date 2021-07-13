@@ -19,15 +19,7 @@ export class ProductComponent implements OnInit {
   }
 
   addToCart(){
-    this.cartService.addProductCart(this.prod);
+    this.cartService.addProduct(this.prod);
   }
-
 }
 
-// "id": 1,
-//     "type": "watch",
-//     "type-detail": "female-watch",
-//     "name": "female-watch1",
-//     "sale": 0,
-//     "cost": 0,
-//     "img": "../../../assets/products/watch/female-watch/female-watch1.jpg"

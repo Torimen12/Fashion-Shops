@@ -1,0 +1,26 @@
+.empty-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    i{
+        font-size: 10rem;
+        margin-bottom: 3rem;
+    }
+    p{
+        font-family: Taviraj;
+        font-size: 3rem;
+        line-height: 4rem;
+        margin-bottom: 3rem;
+    }
+    button{
+        width: 80%;
+        height: 4rem;
+        font-family: Taviraj;
+        font-size: 2rem;
+        color: white;
+        background: #D84727;
+        border: none;
+    }
+}

@@ -1,178 +1,197 @@
 {
   "products": [
-    { 
-      "id":1,
-      "type":"watch",
-      "typeDetail":"female-watch",
-      "name":"Way Kambas Maple",
+    {
+      "id": 1,
+      "type": "watch",
+      "typeDetail": "female-watch",
+      "name": "Way Kambas Maple",
       "sale": 0,
       "cost": 1500000,
-      "isnew":1,
-      "img" :"../../../assets/products/watch/female-watch/female-watch1.jpg"
+      "isnew": 1,
+      "img": "../../../assets/products/watch/female-watch/female-watch1.jpg"
     },
-    { 
-      "id":2,
-      "type":"watch",
-      "typeDetail":"female-watch",
-      "name":"Tomia Ebony",
+    {
+      "id": 2,
+      "type": "watch",
+      "typeDetail": "female-watch",
+      "name": "Tomia Ebony",
       "sale": 30,
       "cost": 1000000,
-      "isnew":0,
-      "img" :"../../../assets/products/watch/female-watch/female-watch2.jpg"
+      "isnew": 0,
+      "img": "../../../assets/products/watch/female-watch/female-watch2.jpg"
     },
-    { 
-      "id":3,
-      "type":"watch",
-      "typeDetail":"female-watch",
-      "name":"Sikka (Ebony & Maple)",
+    {
+      "id": 3,
+      "type": "watch",
+      "typeDetail": "female-watch",
+      "name": "Sikka (Ebony & Maple)",
       "sale": 10,
       "cost": 2500000,
-      "isnew":0,
-      "img" :"../../../assets/products/watch/female-watch/female-watch3.jpg"
+      "isnew": 0,
+      "img": "../../../assets/products/watch/female-watch/female-watch3.jpg"
     },
-    { 
-      "id":4,
-      "type":"watch",
-      "typeDetail":"female-watch",
-      "name":"Kaili",
+    {
+      "id": 4,
+      "type": "watch",
+      "typeDetail": "female-watch",
+      "name": "Kaili",
       "sale": 20,
       "cost": 3500000,
-      "isnew":0,
-      "img" :"../../../assets/products/watch/female-watch/female-watch4.jpg"
+      "isnew": 0,
+      "img": "../../../assets/products/watch/female-watch/female-watch4.jpg"
     },
-    { 
-      "id":5,
-      "type":"watch",
-      "typeDetail":"female-watch",
-      "name":"Sunda",
+    {
+      "id": 5,
+      "type": "watch",
+      "typeDetail": "female-watch",
+      "name": "Sunda",
       "sale": 0,
       "cost": 5500000,
-      "isnew":1,
-      "img" :"../../../assets/products/watch/female-watch/female-watch5.jpg"
+      "isnew": 1,
+      "img": "../../../assets/products/watch/female-watch/female-watch5.jpg"
     },
-    { 
-      "id":6,
-      "type":"watch",
-      "typeDetail":"female-watch",
-      "name":"Mori",
+    {
+      "id": 6,
+      "type": "watch",
+      "typeDetail": "female-watch",
+      "name": "Mori",
       "sale": 20,
       "cost": 15500000,
-      "isnew":0,
-      "img" :"../../../assets/products/watch/female-watch/female-watch6.jpg"
+      "isnew": 0,
+      "img": "../../../assets/products/watch/female-watch/female-watch6.jpg"
     },
-    { 
-      "id":7,
-      "type":"watch",
-      "typeDetail":"female-watch",
-      "name":"Alor",
+    {
+      "id": 7,
+      "type": "watch",
+      "typeDetail": "female-watch",
+      "name": "Alor",
       "sale": 0,
       "cost": 10500000,
-      "isnew":1,
-      "img" :"../../../assets/products/watch/female-watch/female-watch7.jpg"
+      "isnew": 1,
+      "img": "../../../assets/products/watch/female-watch/female-watch7.jpg"
     },
-    { 
-      "id":8,
-      "type":"watch",
-      "typeDetail":"female-watch",
-      "name":"Lore Walnut",
+    {
+      "id": 8,
+      "type": "watch",
+      "typeDetail": "female-watch",
+      "name": "Lore Walnut",
       "sale": 0,
       "cost": 12500000,
-      "isnew":1,
-      "img" :"../../../assets/products/watch/female-watch/female-watch8.jpg"
-    },{ 
-      "id":9,
-      "type":"watch",
-      "typeDetail":"female-watch",
-      "name":"Way Kambas Limited Edition",
+      "isnew": 1,
+      "img": "../../../assets/products/watch/female-watch/female-watch8.jpg"
+    },
+    {
+      "id": 9,
+      "type": "watch",
+      "typeDetail": "female-watch",
+      "name": "Way Kambas Limited Edition",
       "sale": 30,
       "cost": 15000000,
-      "isnew":0,
-      "img" :"../../../assets/products/watch/female-watch/female-watch9.jpg"
+      "isnew": 0,
+      "img": "../../../assets/products/watch/female-watch/female-watch9.jpg"
     },
-    { 
-      "id":10,
-      "type":"watch",
-      "typeDetail":"male-watch",
-      "name":"Sikka (Ebony & Maple)",
+    {
+      "id": 10,
+      "type": "watch",
+      "typeDetail": "male-watch",
+      "name": "Sikka (Ebony & Maple)",
       "sale": 30,
       "cost": 13500000,
-      "isnew":0,
-      "img" :"../../../assets/products/watch/male-watch/male-watch1.jpg"
+      "isnew": 0,
+      "img": "../../../assets/products/watch/male-watch/male-watch1.jpg"
     },
-    { 
-      "id":11,
-      "type":"watch",
-      "typeDetail":"male-watch",
-      "name":"Singo Maple",
+    {
+      "id": 11,
+      "type": "watch",
+      "typeDetail": "male-watch",
+      "name": "Singo Maple",
       "sale": 10,
       "cost": 8500000,
-      "isnew":0,
-      "img" :"../../../assets/products/watch/male-watch/male-watch2.jpg"
+      "isnew": 0,
+      "img": "../../../assets/products/watch/male-watch/male-watch2.jpg"
     },
-    { 
-      "id":12,
-      "type":"watch",
-      "typeDetail":"male-watch",
-      "name":"Sunda",
+    {
+      "id": 12,
+      "type": "watch",
+      "typeDetail": "male-watch",
+      "name": "Sunda",
       "sale": 20,
       "cost": 4500000,
-      "isnew":0,
-      "img" :"../../../assets/products/watch/male-watch/male-watch3.jpg"
+      "isnew": 0,
+      "img": "../../../assets/products/watch/male-watch/male-watch3.jpg"
     },
-    { 
-      "id":13,
-      "type":"watch",
-      "typeDetail":"male-watch",
-      "name":"Way Kambas Mini Ebony",
+    {
+      "id": 13,
+      "type": "watch",
+      "typeDetail": "male-watch",
+      "name": "Way Kambas Mini Ebony",
       "sale": 20,
       "cost": 6500000,
-      "isnew":0,
-      "img" :"../../../assets/products/watch/male-watch/male-watch4.jpg"
+      "isnew": 0,
+      "img": "../../../assets/products/watch/male-watch/male-watch4.jpg"
     },
-    { 
-      "id":14,
-      "type":"watch",
-      "typeDetail":"male-watch",
-      "name":"Sikka (Ebony & Maple)",
+    {
+      "id": 14,
+      "type": "watch",
+      "typeDetail": "male-watch",
+      "name": "Sikka (Ebony & Maple)",
       "sale": 30,
       "cost": 9500000,
-      "isnew":0,
-      "img" :"../../../assets/products/watch/male-watch/male-watch5.jpg"
+      "isnew": 0,
+      "img": "../../../assets/products/watch/male-watch/male-watch5.jpg"
     },
-    { 
-      "id":15,
-      "type":"watch",
-      "typeDetail":"male-watch",
-      "name":"Sunda",
+    {
+      "id": 15,
+      "type": "watch",
+      "typeDetail": "male-watch",
+      "name": "Sunda",
       "sale": 0,
       "cost": 19500000,
-      "isnew":0,
-      "img" :"../../../assets/products/watch/male-watch/male-watch6.jpg"
+      "isnew": 0,
+      "img": "../../../assets/products/watch/male-watch/male-watch6.jpg"
     },
-    { 
-      "id":16,
-      "type":"watch",
-      "typeDetail":"male-watch",
-      "name":"Tomia Ebony",
+    {
+      "id": 16,
+      "type": "watch",
+      "typeDetail": "male-watch",
+      "name": "Tomia Ebony",
       "sale": 20,
       "cost": 1500000,
-      "isnew":0,
-      "img" :"../../../assets/products/watch/male-watch/male-watch7.jpg"
+      "isnew": 0,
+      "img": "../../../assets/products/watch/male-watch/male-watch7.jpg"
     },
-    { 
-      "id":17,
-      "type":"watch",
-      "typeDetail":"male-watch",
-      "name":"Rakai Ebony",
+    {
+      "id": 17,
+      "type": "watch",
+      "typeDetail": "male-watch",
+      "name": "Rakai Ebony",
       "sale": 10,
       "cost": 1500000,
-      "isnew":0,
-      "img" :"../../../assets/products/watch/male-watch/male-watch8.jpg"
+      "isnew": 0,
+      "img": "../../../assets/products/watch/male-watch/male-watch8.jpg"
     }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "carts": [
+    {
+      "id": 1,
+      "cart": [
+        {
+          "product": {
+            "id": 2,
+            "type": "watch",
+            "typeDetail": "female-watch",
+            "name": "Tomia Ebony",
+            "sale": 30,
+            "cost": 1000000,
+            "isnew": 0,
+            "img": "../../../assets/products/watch/female-watch/female-watch2.jpg"
+          },
+          "number": 1
+        }
+      ]
+    }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "typicode"
+  }
 }
-

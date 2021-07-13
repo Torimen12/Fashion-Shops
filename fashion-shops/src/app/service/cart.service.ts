@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { cartItem } from '../interface/cartItem';
 import { HttpService } from './http.service';
 import { product } from './product';
 
@@ -7,18 +8,48 @@ import { product } from './product';
   providedIn: 'root'
 })
 export class CartService {
-  productsCart: product[]=[];
   constructor(private http : HttpService) { }
-  
-  public getProductsCart(){
-    return this.productsCart;
+  cart: cartItem[]=[];
+  public addProduct(product: product){
+    let temp=-1;
+    if(this.cart.length===0){
+      this.cart.push({"product": product,"number":1});
+    }
+    else{
+      this.cart.forEach((prod,index)=>{
+        if(product.id===prod.product.id){
+          temp = index;
+        }
+      });
+      if(temp!==-1){
+        this.cart[temp].number=this.cart[temp].number+1;
+      }
+      else{
+        this.cart.push({"product":product,"number":1});
+      }
+    }
   }
-  public addProductCart(prod: product){
-    this.productsCart.push(prod);
+
+  public removeProduct(product:cartItem){
+    let temp = -1;
+    if(product.number>0){
+      this.cart.forEach((prod,index)=>{
+        if(product.product.id===prod.product.id){
+          temp = index;
+        }
+      });
+      if(temp!==-1){
+        this.cart[temp].number=this.cart[temp].number-1;
+      }
+    }
   }
- 
-  public resetCart(){
-    this.productsCart= [];
+
+  public totalCost(){
+    let cost = 0;
+    this.cart.forEach(prod=>{
+      cost = cost+prod.number*(prod.product.cost*(100-prod.product.sale)/100);
+    })
+    return cost;
   }
 
 }

@@ -1,0 +1,46 @@
+.bill{
+    background: white;
+    padding: 2rem;
+    &-header{
+        font-family: Taviraj-600;
+        font-size: 2rem;
+        line-height: 3rem;
+        color: #333333;
+        margin-bottom: 2.5rem;
+    }
+    &-content{
+        font-family: Taviraj-500;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: #333333;
+        &-detail{
+            margin-bottom: 1.5rem;
+            display: flex;
+            // justify-content: space-evenly;
+            span{
+                flex: 1;
+            }
+        }
+    }
+    &-footer{
+        .cross{
+            width: 100%;
+            height: 1px;
+            background: #333;
+            margin-bottom: 1.5rem;
+        }
+        .total{
+            display: flex;
+            font-family: Taviraj-500;
+            line-height: 3.75rem;
+            color: #333333; 
+            &-text{
+                font-size: 1.5rem;     
+                margin-right: 3rem;                 
+            }
+            &-num{
+                font-size: 1.75rem;                       
+            }
+        }
+    }
+}
