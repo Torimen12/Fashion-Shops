@@ -30,7 +30,10 @@ import { EmptyCartComponent } from './components/empty-cart/empty-cart.component
 import {PaymentComponent } from './pages/payment/payment.component';
 import { PaymentDetailComponent } from './components/payment-detail/payment-detail.component';
 import { OrderDetailComponent } from './components/order-detail/order-detail.component';
-import { PaymentMethodComponent } from './components/payment-method/payment-method.component'
+import { PaymentMethodComponent } from './components/payment-method/payment-method.component';
+import { OrderConfirmComponent } from './components/order-confirm/order-confirm.component';
+import { ShipComponent } from './components/ship/ship.component';
+import { ConfirmComponent } from './pages/confirm/confirm.component'; 
 
 @NgModule({
   declarations: [
@@ -59,7 +62,10 @@ import { PaymentMethodComponent } from './components/payment-method/payment-meth
     PaymentComponent,
     PaymentDetailComponent,
     OrderDetailComponent,
-    PaymentMethodComponent
+    PaymentMethodComponent,
+    OrderConfirmComponent,
+    ShipComponent,
+    ConfirmComponent
   ],
   imports: [
     BrowserModule,

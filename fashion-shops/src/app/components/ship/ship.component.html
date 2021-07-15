@@ -1,0 +1,64 @@
+<div class="ship">
+    <div class="ship-head">
+        <div class="ship-head-item" style="margin-right: 1.5rem;">
+            <i class="bi bi-clock"></i>
+            <span>
+                5 ngày vận chuyển
+            </span>
+        </div>
+        <div class="ship-head-item">
+            <i class="bi bi-truck"></i>
+            <span>
+                GHTK Express
+            </span>
+        </div>
+    </div>
+    <div class="ship-products">
+        <div *ngFor="let product of cart">
+            <div class="ship-products-name">
+                {{product.product.name}}
+            </div>
+            <div class="ship-products-cost">
+                {{product.number}} x {{product.product.cost*(100-product.product.sale)/100|money}} VNĐ
+            </div>
+        </div>
+    </div>
+    <div class="ship-cost">
+        <div class="ship-cost-item">
+            <span class="ship-cost-item-text">
+                Tạm tính
+            </span>
+            <span class="ship-cost-item-number">
+                {{totalCost*0.9|money}} VNĐ
+            </span>
+        </div>
+        <div class="ship-cost-item">
+            <span class="ship-cost-item-text">
+                Phí vận chuyển
+            </span>
+            <span class="ship-cost-item-number">
+                50.000 VNĐ
+            </span>
+        </div>
+        <div class="ship-cost-item">
+            <span class="ship-cost-item-text">
+                Phí đóng gói
+            </span>
+            <span class="ship-cost-item-number">
+                0 VNĐ
+            </span>
+        </div>
+    </div>
+    <div class="ship-total">
+        <span class="ship-total-text">Tổng cộng</span>
+        <span class="ship-total-number">{{totalCost*0.9+50000|money}} VNĐ</span>
+    </div>
+    <div class="ship-address">
+        <span class="ship-address-left">
+            Địa chỉ giao hàng
+        </span>
+        <span class="ship-address-right">
+            278 Nguyễn Tri Phương, P.5, Q.10, TP. Hồ Chí Minh
+        </span>
+    </div>
+</div>

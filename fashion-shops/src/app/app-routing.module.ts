@@ -5,6 +5,7 @@ import { CheckOrderComponent } from './pages/check-order/check-order.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { PaymentComponent } from './pages/payment/payment.component';
+import { ConfirmComponent } from './pages/confirm/confirm.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path:'profile',component:ProfileComponent},
   { path:'products',component:ProductsComponent},
   {path:'check-order',component:CheckOrderComponent},
-  {path:'payment',component:PaymentComponent}
+  {path:'payment',component:PaymentComponent},
+  {path:'confirm',component:ConfirmComponent}
 ];
 
 @NgModule({

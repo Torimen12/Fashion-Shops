@@ -1,0 +1,41 @@
+.order-confirm{
+    background: white;
+    padding: 3rem 5rem;
+    min-height: 37.5rem;
+    max-height: 37.5rem;
+    &-img{
+        margin-bottom: 2.5rem;
+    }
+    &-content{
+        margin-bottom: 3.75rem;
+        &-header{
+            font-family: Taviraj-500;
+            font-size: 1.5rem;
+            line-height: 2rem;            
+            color: #333333;   
+            margin-bottom: 1rem; 
+            text-align: center;        
+        }
+        &-text{
+            text-align: center;
+            font-family: Nunito;
+            font-size: 1rem;
+            line-height: 1.5rem; 
+            color: #333333;           
+        }
+    }
+    &-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            padding: 1rem 5rem;
+            background: #D84727;
+            border: none;
+            font-family: Taviraj-500;
+            font-size: 1.25rem;
+            line-height: 2rem;      
+            color: #FFFFFF;            
+        }
+    }
+}

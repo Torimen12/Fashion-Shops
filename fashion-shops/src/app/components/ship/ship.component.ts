@@ -3,18 +3,19 @@ import { cartItem } from 'src/app/interface/cartItem';
 import { CartService } from 'src/app/service/cart.service';
 
 @Component({
-  selector: 'app-order-detail',
-  templateUrl: './order-detail.component.html',
-  styleUrls: ['./order-detail.component.scss']
+  selector: 'app-ship',
+  templateUrl: './ship.component.html',
+  styleUrls: ['./ship.component.scss']
 })
-export class OrderDetailComponent implements OnInit {
-  cart: cartItem[] = [];
-  date  = Date.now();
+export class ShipComponent implements OnInit {
+  cart: cartItem[]=[];
+  totalCost = 0;
 
   constructor(private cartService: CartService) { }
 
   ngOnInit(): void {
     this.cart = this.cartService.cart;
+    this.totalCost = this.cartService.totalCost();
   }
 
 }

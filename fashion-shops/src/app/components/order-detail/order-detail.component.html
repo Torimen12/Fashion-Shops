@@ -23,7 +23,7 @@
             </div>
             <div class="col-7">
                 <div class="title">
-                    2021- 05 -07 14:01:48
+                    {{date|date:"medium"}}
                 </div>
                 <div class="content">
                 </div>
@@ -34,17 +34,13 @@
                 <p>Sản phẩm</p>
             </div>
             <div class="col-7">
-                <div class="title">
-                    Way Kambas Mini Ebony
-                </div>
-                <div class="content">
-                    2 x 1.024.000 VNĐ
-                </div>
-                <div class="title">
-                    Way Kambas Mini Ebony
-                </div>
-                <div class="content">
-                    2 x 1.024.000 VNĐ
+                <div class="prod" *ngFor="let product of cart">
+                    <div class="title">
+                        {{product.product.name}}
+                    </div>
+                    <div class="content">
+                        {{product.number}} x {{product.product.cost*(100-product.product.sale)/100}} VNĐ
+                    </div>
                 </div>
             </div>
         </div>
